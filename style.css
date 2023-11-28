@@ -1,24 +1,18 @@
 body {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.header h3 {
-    margin-top: 0;
-}
 
+/* NAVBAR */
 .header {
     background-color: #1f2937;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.intro h1 {
-    color: #F9FAF8;
-    font-size: 48px;
-    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 450px 70px 450px;
 }
 
 .header-link, .intro p {
@@ -29,4 +23,131 @@ ul {
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+}
+
+/* ----------end of NAVBAR------------ */
+
+
+/* HERO-CONTAINER */
+
+/* .intro {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #1f2937;
+    padding: 0px 400px 100px 400px;
+}
+
+.intro h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 800;
+} */
+
+.hero-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 0px 450px 100px 450px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.signUp {
+    margin-top: 10px;
+    background-color: #3882f6;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.signUp:active{
+    background-color: #1e57a2;
+}
+
+.image-container {
+    margin-left: 20px;
+    padding: 100px 250px 100px 250px;
+    background-color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------end of Hero Container------------ */
+
+
+/* Random-Info */
+
+.random-info h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 800;
+    text-align: center;
+}
+
+.card {
+    border: 3px solid #3882f6;
+    border-radius: 15px;
+    padding: 16px;
+    margin: 16px;
+    width: 200px;
+    height: 200px;
+}
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card-text {
+    width: 200px;
+    margin-top: 10px;
+    padding-left: 25px;
+    text-align: center;
+}
+
+.card-container {
+    text-align: center;
 }
